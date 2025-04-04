@@ -1,4 +1,4 @@
-/* Basic design with red colors */
+/* Basic design with refined red colors */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     direction: rtl;
@@ -9,25 +9,25 @@ body {
     line-height: 1.6;
 }
 
-/* Floating menu - fixed display issues */
+/* Improved floating menu with better contrast and hover effects */
 #menu {
     position: fixed;
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #8B0000, #DC143C);
+    background: linear-gradient(to right, #8B0000, #E53935);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     top: 0;
     padding: 12px 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
     list-style-type: none; /* Remove bullets */
 }
 
 #menu li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 #menu a {
@@ -35,29 +35,31 @@ body {
     color: white;
     font-weight: bold;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
 #menu a:hover {
     background-color: white;
-    color: #DC143C;
+    color: #B71C1C;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
-/* General section styling */
+/* Enhanced section styling */
 .section {
-    padding: 60px 20px 30px;
-    margin-bottom: 30px;
+    padding: 65px 25px 35px;
+    margin-bottom: 40px;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 25px;
-    color: #B22222;
+    color: #B71C1C;
     text-align: center;
     position: relative;
     font-weight: bold;
@@ -67,32 +69,34 @@ body {
     content: "";
     display: block;
     width: 80px;
-    height: 3px;
-    background-color: #DC143C;
-    margin: 10px auto;
+    height: 4px;
+    background-color: #E53935;
+    margin: 12px auto;
+    border-radius: 2px;
 }
 
-/* About section styling */
+/* Improved About section styling */
 .about-content {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     align-items: flex-start;
     background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.1);
 }
 
 .profile-pic {
     max-width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .profile-pic:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(183, 28, 28, 0.2);
 }
 
 .about-text {
@@ -101,9 +105,9 @@ body {
 }
 
 .about-text h3 {
-    color: #B22222;
+    color: #B71C1C;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .about-text ul {
@@ -112,29 +116,29 @@ body {
 }
 
 .about-text li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     position: relative;
     padding-right: 25px;
 }
 
 .about-text li:before {
     content: "♥";
-    color: #DC143C;
+    color: #E53935;
     position: absolute;
     right: 0;
     font-weight: bold;
 }
 
 .about-text p {
-    margin-bottom: 15px;
-    line-height: 1.7;
+    margin-bottom: 18px;
+    line-height: 1.8;
 }
 
-/* Photo gallery styling */
+/* Enhanced Photo gallery styling */
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
 }
 
@@ -142,14 +146,15 @@ body {
     max-width: 300px;
     text-align: center;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .photo-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(183, 28, 28, 0.15);
 }
 
 .photo-item img {
@@ -160,73 +165,84 @@ body {
 }
 
 .photo-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .photo-item p {
     padding: 15px;
-    color: #8B0000;
+    color: #B71C1C;
     font-weight: bold;
 }
 
-/* Video styling */
+/* Enhanced Video styling */
 .video-container {
     text-align: center;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 25px auto;
     background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.1);
 }
 
 iframe {
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Like section styling */
+/* Enhanced Like section styling */
+/* Simple, clean Like button styling */
 .fb-like {
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
+    margin: 25px auto;
+    display: inline-block;
     background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    max-width: 500px;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
-}
-
-/* QR code styling */
-.qr-code {
-    display: block;
-    margin: 20px auto;
-    max-width: 200px;
-    border: 4px solid #DC143C;
+    padding: 20px;
     border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(183, 28, 28, 0.15);
     transition: transform 0.3s ease;
 }
 
-.qr-code:hover {
-    transform: scale(1.05);
+.fb-like:hover {
+    transform: translateY(-3px);
 }
 
-/* Q&A section styling */
+/* Containing div to center the button */
+.like-container {
+    text-align: center;
+    margin: 20px auto;
+}
+/* Enhanced QR code styling */
+.qr-code {
+    display: block;
+    margin: 25px auto;
+    max-width: 200px;
+    border: 5px solid #E53935;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.2);
+}
+
+/* Enhanced Q&A section styling */
 #qna {
     background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.1);
 }
 
 #qna h3 {
-    color: #B22222;
+    color: #B71C1C;
     margin-top: 25px;
     margin-bottom: 15px;
-    font-size: 20px;
-    border-bottom: 2px solid #ffcccc;
-    padding-bottom: 5px;
+    font-size: 22px;
+    border-bottom: 2px solid #FFCDD2;
+    padding-bottom: 8px;
 }
 
 #qna ul, #qna ol {
@@ -234,70 +250,89 @@ iframe {
 }
 
 #qna li {
-    margin-bottom: 12px;
-    line-height: 1.7;
+    margin-bottom: 14px;
+    line-height: 1.8;
 }
 
 #qna strong {
-    color: #B22222;
+    color: #B71C1C;
 }
 
-/* Contact form styling */
+#qna a {
+    color: #E53935;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#qna a:hover {
+    color: #B71C1C;
+    text-decoration: underline;
+}
+
+/* Enhanced Contact form styling */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(183, 28, 28, 0.1);
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: bold;
-    color: #8B0000;
+    color: #B71C1C;
 }
 
 .form-group input, .form-group textarea, .form-group select {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ffcccc;
-    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid #FFCDD2;
+    border-radius: 10px;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-    border-color: #DC143C;
+    border-color: #E53935;
     outline: none;
-    box-shadow: 0 0 5px rgba(220, 20, 60, 0.3);
+    box-shadow: 0 0 8px rgba(229, 57, 53, 0.3);
 }
 
 .submit-button {
-    background-color: #DC143C;
+    background-color: #E53935;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 14px 30px;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(183, 28, 28, 0.2);
 }
 
 .submit-button:hover {
-    background-color: #8B0000;
+    background-color: #B71C1C;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(183, 28, 28, 0.3);
 }
 
-/* Responsiveness */
+/* Improved Responsiveness */
 @media (max-width: 768px) {
+    #menu {
+        padding: 10px 0;
+    }
+    
     #menu li {
         margin: 5px;
     }
@@ -310,14 +345,65 @@ iframe {
     .profile-pic {
         max-width: 250px;
     }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .submit-button {
+        width: 100%;
+    }
 }
 
-/* Simple animations */
+/* Enhanced animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(25px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 .section {
-    animation: fadeIn 0.8s ease forwards;
+    animation: fadeIn 0.9s ease forwards;
+}
+
+/* Star elements for additional decoration */
+.star {
+    color: #FFD700;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/* Link styling for "Further Reading" */
+.further-reading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.further-reading a {
+    color: #B71C1C;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 3px 5px;
+}
+
+.further-reading a:hover {
+    color: #E53935;
+}
+
+.further-reading a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E53935;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.further-reading a:hover::after {
+    transform: scaleX(1);
 }
